@@ -1,12 +1,8 @@
 const express = require('express');
 const app = express();
 
-app.use('/section',(req,res) =>{
-    console.log("App is in Some Section")
-})
-app.use('/',(req,res) => {
-    console.log("App is in Home Page");
-})
+app.use(express.json());
+
 
 
 // app.use(router,controller);
